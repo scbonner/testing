@@ -1,0 +1,50 @@
+
+drop database if exists bamazon_db;
+create database bamazon_db;
+
+use bamazon_db;
+
+create table SUPPLY (
+    ID integer auto_increment not null,
+    PRODUCT_NAME varchar(50) not null,
+    DEPARTMENT varchar(50) not null,
+    PRICE decimal(10,2),
+    STOCK_QUANTITY integer(10),
+    primary key(id)
+);
+
+insert into SUPPLY(PRODUCT_NAME, DEPARTMENT, PRICE, STOCK_QUANTITY)
+values ('Bibbs', 'Infants', 10, 150);
+
+insert into SUPPLY(PRODUCT_NAME, DEPARTMENT, PRICE, STOCK_QUANTITY)
+values ('Computer', 'DELL', 700, 110);
+
+insert into SUPPLY(PRODUCT_NAME, DEPARTMENT, PRICE, STOCK_QUANTITY)
+values ('Bicycles', 'Fitness', 250, 50);
+
+insert into SUPPLY(PRODUCT_NAME, DEPARTMENT, PRICE, STOCK_QUANTITY)
+values ('Sneakers', 'NIKE', 250, 10);
+
+insert into SUPPLY(PRODUCT_NAME, DEPARTMENT, PRICE, STOCK_QUANTITY)
+values ('Stoneware', 'Kitchen', 100, 10);
+
+insert into SUPPLY(PRODUCT_NAME, DEPARTMENT, PRICE, STOCK_QUANTITY)
+values ('Couch', 'Furniture', 500, 10);
+
+insert into SUPPLY(PRODUCT_NAME, DEPARTMENT, PRICE, STOCK_QUANTITY)
+values ('Assessories', 'Clothes', 100, 100);
+
+insert into SUPPLY(PRODUCT_NAME, DEPARTMENT, PRICE, STOCK_QUANTITY)
+values ('Tile', 'Flooring', 100, 90);
+
+insert into SUPPLY(PRODUCT_NAME, DEPARTMENT, PRICE, STOCK_QUANTITY)
+values ('Earrings', 'Jewelry', 140, 200);
+
+insert into SUPPLY(PRODUCT_NAME, DEPARTMENT, PRICE, STOCK_QUANTITY)
+values ('Television', 'Entertainment', 400, 70);
+
+select * from SUPPLY;
+
+
+
+

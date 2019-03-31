@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Boostrap Stylesheet -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">    
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<title>Trivia Game</title>
+<style>
+    h1 {font-size: 64px;}
+    h2 {font-size: 48px;}  
+    body {
+    /* background-color: orangered; */
+}
+</style>
+</head>
+<!--Objective to create a trivia game. Participant will have an array of questions to answer within a 60 second time limit.
+Participant can only respond to one of event of each multiple choice questions. 
+If time runs out, the participant automatically looses the game.-->
+<body>
+<div class="container">
+    <div class="jumbotron">
+        <h1><center><strong>Famous African American Jazz Musicians</strong></center></h1>
+        <h2><center><strong><em>From The State Of North Carolina</em></strong></center></h2>        
+    </div>    
+</div>
+
+<!--Setup 30 second timer that will spin and stop after 60 seconds if 
+    player has not completed game, centered at top of page. The spinner represents
+    the 30 second timer for the game-->
+<!-- <div class="w3-container">
+         <p><center><i class="fa fa-refresh w3-spin" style="font-size:80px"></i></center></p>
+</div> -->
+
+    <h3><center><strong><x-large>We want to test how much you know about jazz and the African American musicians 
+    who are considered some of the most famous icons of all time, born right here in North Carolina. So, before
+    we get begin... take a deep breath, and let's do it. When you are ready, click to begin. <br>
+    Oops! We added a bonus question to assist those whose knowledge or recall of their state's history is cloudy.
+    </x-large></strong></center></h3>
+</div>
+
+<!--Start button container to begin game-->
+
+<center><button id= "start" class="btn btn-primary" color: "red"><xx-large>START</xx-large></button></center>
+
+<!-- }<div class="container">
+        <div class="btn-group btn-group-lg">
+        <button type="button" class="btn btn-primary" id="start-button" onclick=><xx-large>START</xx-large></button>
+
+    </div> -->
+ 
+
+<!--Prompt participant to click start-->
+<!-- Player can only choose one answer for multiple choice questions?'s (1-8). If answer all ?s correct will receive score of seven.,
+in addition to answering the bonus question the total score is 17-->
+
+<main><center>
+<div class="container" id="born">
+<p><strong><x-large>1. In what city was John Coltrane born?</x-large></strong></p> <!--Can only pick one-->
+    <!-- <button type="button" class="btn btn-primary">Hamlet</button>
+    <button type="button" class="btn btn-primary">Beaufort</button> -->
+    <form>
+        <input type="radio" name="city" value= "Hamlet" id="Hamlet">Hamlet
+        <input type="radio" name="city" value= "Beaufort" id="Beaufort">Beaufort
+    </form></div>
+
+
+    <div class="question2">  
+<p><strong><x-large>2. In what city was Nina Simone born?</x-large></strong></p> <!--Can only pick one-->
+    <!-- <button type="button" class="btn btn-primary">Durham</button>
+    <button type="button" class="btn btn-primary">Tryon</button> -->
+    <form>
+        <input type="radio" name="city" value= "incorrect" id="Durham">Durham
+        <input type="radio" name="city" value= "correct" id="Tryon">Tryon
+    </form></div>
+
+    <div class="question3">  
+<p><strong><x-large>3. In what city was Max Roach born?</x-large></strong></p> <!--Can only pick one-->
+<!-- <button type="button" class="btn btn-primary">Littleton</button>
+<button type="button" class="btn btn-primary">Newland</button> -->
+<form>
+    <input type="radio" name="city" value= "incorrect" id="Littleton">Littleton
+    <input type="radio" name="city" value= "correct" id="Newland">Newland
+</form></div>
+
+    <div class="question4">
+<p><strong><x-large>4. In what city was Thelonious Monk born?</x-large></strong></p> <!--Can only pick one-->
+    <!-- <button type="button" class="btn btn-primary">Rocky Mount</button>
+    <button type="button" class="btn btn-primary">Kannapolis</button> -->
+<form>
+    <input type="radio" name="city" value= "correct" id="Rocky Mount">Rocky Mount
+    <input type="radio" name="city" value= "incorrect" id="Kannapolis">Kannapolis
+</form></div>
+
+    <div class="question5">
+<p><strong><x-large>5. What instrument is John Coltrane well known for?</x-large></strong></p><!--Can only pick one-->
+<!-- <button type="button" class="btn btn-primary">Drum</button>
+<button type="button" class="btn btn-primary">Trumpet</button>
+<button type="button" class="btn btn-primary">Saxophone</button>
+<button type="button" class="btn btn-primary">Bass</button> -->
+<form>
+    <input type="radio" name="instument" value= "incorrect" id="Drum">Drum
+    <input type="radio" name="instument" value= "correct" id="Saxophone">Saxophone
+    <input type="radio" name="instument" value= "incorrect" id="Bass">Bass
+    <input type="radio" name="instument" value= "incorrect" id="Trumpet">Trumpet
+</form></div>
+
+    <div class="question6">
+<p><strong><x-large>6. Which instrument was Nina Simone and Thelonious Monk well known for?</x-large></strong></p> <!--Can only pick one-->
+<!-- <button type="button" class="btn btn-primary">Clarinet</button>
+<button type="button" class="btn btn-primary">Trumpet</button>
+<button type="button" class="btn btn-primary">Bass</button>
+<button type="button" class="btn btn-primary">Piano</button>  -->
+<form>
+    <input type="radio" name="instrument" value= "incorrect" id="Clarinet">Clarinet
+    <input type="radio" name="instument" value= "incorrect" id="Trumpet">Trumpet
+    <input type="radio" name="instument" value= "incorrect" id="Bass">Bass
+    <input type="radio" name="instument" value= "correct" id="Piano">Piano
+</form>
+</div>
+
+    <div class="question7">
+<p><strong><x-large>7. Pick one category that best describes all these musicians.</x-large></strong></p> <!--Can only pick one-->
+<!-- <button type="button" class="btn btn-primary">Singer</button>
+<button type="button" class="btn btn-primary">Band Leader</button>
+<button type="button" class="btn btn-primary">Composer</button>
+<button type="button" class="btn btn-primary">Civil Rights Activist</button> -->
+<form>
+    <input type="radio" name="instument" value= "incorrect" id="Singer">Singer
+    <input type="radio" name="instument" value= "incorrect" id="Band Leader">Band Leader
+    <input type="radio" name="instument" value= "correct" id="Composer">Composer
+    <input type="radio" name="instument" value= "incorrect" id="Civil Rights Activist">Activist
+</form></div>       
+<!--Bonus question adds 10 extra points to players game-->
+
+    <!-- <div class="bonus question">
+<p><strong><x-large><mark>Bonus Question</mark>: If answered correctly, you will win an additional <br><mark>10 points!</mark></x-large></strong></p> <!--Can only pick one-->
+<!-- 
+<p><strong><x-large>8. Which city hosts an annual jazz festival in honor of John Coltrane?</x-large></strong></p> <!--Can only pick one-->
+    <!-- </div></center></main> --> 
+
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script type="text/javascript" src="assets/javascript/app.js"></script>
+</body>
+</html>
+
+<!--<div id="buttons">
+    <button id="start"><h2>Start</h2></button>
+    <button id="stop"><h2>Stop</h2></button>
+  </div>
+
+  <div id="image-holder"></div>-->
+
+  <!-- jQuery 
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+   Script 
+  <script type="text/javascript" src="slideshow.js"></script>-->
+
+
+<!--You'll create a trivia form with multiple choice or true/false options (your choice).
+
+The player will have a limited amount of time to finish the quiz. 
+
+
+The game ends when the time runs out. The page will reveal the number of questions that players answer correctly and incorrectly.
+
+
+Don't let the player pick more than one answer per question.
+
+Don't forget to include a countdown timer.-->

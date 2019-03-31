@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"></script>
+    <title>Document</title>
+   <script>
+   $(document).ready(function(){
+
+    var collection = $("#item1").nextUntil( $("#item5"));
+    collection.text("Generated Text");
+   });
+   </script>
+</head>
+   <body>
+<ol>
+    <li id ="item1">Item
+    <li id ="item2">Item
+    <li id ="item3">Item
+    <li id ="item4">Item
+    <li id ="item5">Item
+</ol>
+</body>
+</html>
